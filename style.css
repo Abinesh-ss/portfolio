@@ -396,6 +396,8 @@ span{
     background-color: var(--second-bg-color);
 }
 .footer p{
+    justufy-content:center;
+    text-align:center;
     font-weight: 700;
     color: #0ef;
     font-size: 1.6rem;
