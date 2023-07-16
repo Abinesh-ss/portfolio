@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito&family=Poppins:ital,wght@0,400;1,500&family=Roboto&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@100;200;300;600;700;800;900&family=Roboto:wght@700&display=swap');
 *{
     text-transform: capitalize;
     transition: all 0.2s linear;
@@ -16,6 +16,7 @@
     --second-bg-color:#323946;
     --text-color:#fff;
     --main-color:#0ef;
+
 }
 @keyframes floating{
     0%{ transform: translate(0,0px);}
@@ -62,10 +63,13 @@ section{
     margin-left: 4rem;
     transition: .4s;
 }
+.navbar.active{
+    display: block;
+}
 .navbar a:hover,.navbar a.active{
     color:var(--main-color);
 }
-#menu-icon{
+#menuicon{
     font-size: 3.6rem;
     color: var(--text-color);
     display: none;
@@ -371,129 +375,91 @@ span{
     color: #ffffff;
     
 }
-.icon{
-    display: flex;
-    justify-content: space-around;
-    margin-top: 50px;
+
+.icon a{
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding:10px;
+    width: 11rem;
+    height: 11rem;
+    background: transparent;
+    border: .2rem solid var(--main-color);
+    border-radius:47%;
+    font-size: 4.7rem;
+    color: var(--main-color);
+    margin: 53px;
 }
-.icon a i{
-    padding: 15px;
-    border-radius: 50%;
-    background-color: #191919;
-    color: #ffffff;
-    font-weight: bold;
-    font-size: 20px;
-}
-.icon a i:hover{
+
+.icon a:hover{
     background-color: #0ef;
     color: rgb(255, 0, 106);
 }
 .footer{
     display:flex;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
+    padding: 2rem 9%;
     background-color: var(--second-bg-color);
 }
 .footer p{
-    justufy-content:center;
-    text-align:center;
     font-weight: 700;
     color: #0ef;
     font-size: 1.6rem;
 }
-
 @media (max-width:1200px){
     html{
-        font-size:55%;
+        font-size: 55%;
     }
-    .home{
-        padding:1rem 4rem;
+    section{
+        padding:2rem 3%;
+    }
+    .footer{
+        padding:2rem 3%;
     }
 }
-@media (max-width:991px){
-   header{
-     left:-120%;
-   }
-   #menu{
-     display: block;
-   }
-   .home .home1 {
-    padding:4rem;
-   }
-   header.toggle{
-     left:0%;
-   }
-   body{
-    padding:0px;
-   }
-   .buttons{
-    text-align: center;
-   }
-}
-@media (max-width:308px){
-   html{
-    font-size:50%;
-   }
-   .buttons{
-    text-align: center;
-   }
- }
-@media (max-width:500px){
-    body{
-        border:5px groove white;
-        margin: 8px;
-        font-size: 50%;
+@media (max-width:768px){
+    #menuicon{
+        display: flex;
     }
-    .home .home-img-container{
-        margin-top: 50px;
-        margin-bottom: 20px;
+    .navbar{
+        position:absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        padding: 1rem 3%;
+        background: var(--bg-color);
+        border-top: .1rem solid rgba(0,0,0,.2);
+        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+        display: none;
+    }
+    .navbar.active{
         display: block;
     }
-    .home .home1{
-        padding:2rem;
+    .navbar a{
+        display: block;
+        font-size: 2rem;
+        margin: 3rem 0;
     }
-    .home .home1 h1{
-        font-size: 4.5rem;
+    .home-image img{
+        width:70vw;
+        margin-top: 4rem;
     }
-    .home .home1 p,h3{
+    .projects h3 h5{
+        font-size: 1rem;
+        margin-bottom: 3rem;
+    } 
+    .layer h3{
         font-size: 2rem;
     }
-    header{
-        width:100vw;
-        border:5px solid grey;
-        padding:20px;
+    .layer h5{
+        font-size: 1.3rem;
     }
-    .about p{
-        line-height: 3rem;
-        letter-spacing: none;
-    }
-    .heading{
-        margin:0 .3rem;
-    }
-    .about .row  .counter .box {
-        width:100%;
-    }
-    .education .box-container .box {
-        width:100%;
-    }
-    
-    .buttons{
-        text-align: center;
-    }
-    .about .skills .row{
-        gap:-1.5rem;
-        grid-template-columns: repeat(auto-fit,minmax(11rem,auto));
-    }
-    .about .skills .row li {
-        width:9rem;
-        height: 10rem;
-    }
-    .about .skills .row li img{
-        object-fit: cover;
-        width:9rem;
-        height:9.5rem;
-        transition: 0.1s linear;
+    .layer a{
+        width: 3rem;
+        height: 3rem;
     }
    
- }
+}
