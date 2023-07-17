@@ -429,7 +429,7 @@ span{
         padding:2rem 3%;
     }
 }
-@media (max-width:308px){
+@media (max-width:480px){
     html{
      font-size:50%;
     }
