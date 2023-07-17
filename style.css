@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@100;200;300;600;700;800;900&family=Roboto:wght@700&display=swap');
 *{
+    box-sizing:border-box;
     text-transform: capitalize;
     transition: all 0.2s linear;
     margin: 0;
@@ -28,6 +29,7 @@ html{
     overflow-x: hidden;
 }
 body{
+    font-family: 'Nunito',sans-serif;
     background: var(--bg-color);
     color:var(--text-color)
 }
@@ -47,6 +49,7 @@ section{
     justify-content: space-between;
     align-items: center;
     z-index: 100;
+    color: #fff;
 }
 .header.sticky{
     border-bottom: 1rem solid rgba(0,0,0,0.2);
@@ -57,10 +60,16 @@ section{
     font-weight: 600;
     cursor: default;
 }
+.navbar{
+    display: flex;
+    align-items: center;
+}
 .navbar a{
-    font-size: 1.7rem;
+    font-size: 1.8rem;
+    font-weight:bold;
     color:var(--text-color);
     margin-left: 4rem;
+    text-decoration: none;
     transition: .4s;
 }
 .navbar.active{
@@ -69,10 +78,10 @@ section{
 .navbar a:hover,.navbar a.active{
     color:var(--main-color);
 }
-#menuicon{
+#menu-icon{
     font-size: 3.6rem;
-    color: var(--text-color);
-    display: none;
+    color: white;
+    display:none;
 }
 .home{
     display: flex;
@@ -139,7 +148,7 @@ span{
     transition: .3s ease;
 }
 .btn:hover{
-    background-color: magenda;
+    background-color: yellow;
 }
 
 .about{
@@ -368,7 +377,7 @@ span{
     background-color: rgb(212, 212, 9);
     transition: none;
 }
-.contact h2{
+.contacts h2{
     font-size: 35px;
     justify-content: center;
     text-align: center;
@@ -420,9 +429,26 @@ span{
         padding:2rem 3%;
     }
 }
+@media (max-width:308px){
+    html{
+     font-size:50%;
+    }
+    .buttons{
+     text-align: center;
+    }
+  }
 @media (max-width:768px){
-    #menuicon{
-        display: flex;
+    body{
+        overflow-x: hidden;
+    }
+    .header{
+        padding: 1.5rem 9%;
+    }
+    #menu-icon{
+        display: block;
+        font-size: 3.6rem;
+        color: var(--text-color);
+        cursor: pointer;
     }
     .navbar{
         position:absolute;
@@ -434,22 +460,25 @@ span{
         border-top: .1rem solid rgba(0,0,0,.2);
         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         display: none;
+        z-index: 100;
     }
     .navbar.active{
-        display: block;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
     }
     .navbar a{
         display: block;
         font-size: 2rem;
-        margin: 3rem 0;
+        margin: 1rem 0;
     }
     .home-image img{
         width:70vw;
         margin-top: 4rem;
     }
     .projects h3 h5{
-        font-size: 1rem;
-        margin-bottom: 3rem;
+        font-size: 1.4rem;
+        margin-bottom: 2rem;
     } 
     .layer h3{
         font-size: 2rem;
@@ -461,5 +490,28 @@ span{
         width: 3rem;
         height: 3rem;
     }
+    .skills .skill-box .row {
+        margin-top: 3rem;
+        margin-left:3rem;
+        display: grid;
+        grid-template-columns: repeat(auto-fit,minmax(110px,auto));
+        gap:1rem;
+     }
+     .skills .skill-box .row li{
+        
+         background: #333;
+         border-radius: 1rem;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+     }
+     .skills .skill-box .row li img{
+         height:100px;
+         padding:1rem;
+         align-content: center;
+         object-fit: cover;
+     }
+    
    
 }
