@@ -36,9 +36,6 @@ section{
     
     padding: 80px 8%;
 }
-.page-container{
-    border:1px solid white;
-}
 
 .header{
     position:fixed;
@@ -555,6 +552,9 @@ span{
     }
     .project-content{
         grid-gap:2rem;
+    }
+    .skills .skill-box .row {
+        margin-left: 0rem;
     }
 }
     
