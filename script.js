@@ -2,7 +2,6 @@ let menuIcon=document.querySelector('#menu-icon');
 let navbar=document.querySelector('.navbar');
 
 menuIcon.onclick=()=>{
-    menuIcon.classList.toogle('bx-menu')
     menuIcon.classList.toggle('bx-x');
     navbar.classList.toggle('active');
 };
@@ -27,13 +26,16 @@ window.onscroll=()=>{
     let header = document.querySelector('.header');
     header.classList.toggle('sticky',window.scrollY > 100);
 
+    menuIcon.classList.remove('bx-x');
+    navbar.classList.remove('active');
+
     
 };
 
 ScrollReveal({
     reset:true,
-    distance:'70px',
-    duration:2000,
+    distance:'80px',
+    duration:1000,
     delay:100
 });
  
