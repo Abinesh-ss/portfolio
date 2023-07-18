@@ -553,20 +553,7 @@ span{
     .project-content{
         grid-gap:2rem;
     }
-    .skills .row{
-        gap:-1.5rem;
-        grid-template-columns: repeat(auto-fit,minmax(11rem,auto));
-    }
-    .skills .row li {
-        width:9rem;
-        height: 10rem;
-    }
-    .skills .row li img{
-        object-fit: cover;
-        width:9rem;
-        height:9.5rem;
-        transition: 0.1s linear;
-    }
+    
 }
     
     
