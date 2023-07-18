@@ -432,7 +432,7 @@ span{
 }
 @media (max-width:768px){
     section{
-        padding:1rem 2%
+        padding:1rem 1%
     }
     #menu-icon{
         display: block;
@@ -463,9 +463,13 @@ span{
     }
     .home-content h3{
         font-size:1.6rem;
+        margin-left:-3rem;
+        margin-top:3rem;
     }
     .home-content h1{
         font-size:2rem;
+        margin-left:-3rem;
+        margin-top:3rem;
         }
     .icon a{
         font-size: 2rem;
