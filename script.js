@@ -41,7 +41,7 @@ ScrollReveal({
  
  ScrollReveal().reveal('.heading ,.heading-1',{origin: 'top'});
  ScrollReveal().reveal('.home-image, .about-img,.icon,.span', {origin: 'bottom'});
- ScrollReveal().reveal('.home-content h3, .about-content h3,.project-content,.skill-box', {origin: 'left'});
- ScrollReveal().reveal('.home-content h1, .home-content p, .about-content p', {origin: 'right'});
+ ScrollReveal().reveal('.homr-content h1, .about-content h3, .project-content,.skill-box,.domain, .h1, .name', {origin: 'left'});
+ ScrollReveal().reveal('.home-content p, .about-content p, .profile', {origin: 'right'});
  
  
