@@ -431,6 +431,9 @@ span{
     }
 }
 @media (max-width:768px){
+    section{
+        padding:1rem 2%
+    }
     #menu-icon{
         display: block;
     }
@@ -458,17 +461,23 @@ span{
     .home-image img{
         margin-top: 7rem;
     }
+    .home-content h3{
+        font-size:1.6rem;
+    }
+    .home-content h1{
+        font-size:2rem;
+        }
     .icon a{
         font-size: 2rem;
-        width: 5rem;
-        height: 5rem;
+        width: 8rem;
+        height: 8rem;
         border-radius: 47%;
     }
     .layer h3{
-        font-size: 1.5rem;
+        font-size: .7rem;
     }
     .layer h5{
-        font-size: 1rem;
+        font-size: .4rem;
         margin: .3rem 0 1rem;
     }
 }
