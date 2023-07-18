@@ -1,6 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Bruno+Ace+SC&family=Poppins:wght@100;200;300;600;700;800;900&family=Roboto:wght@700&display=swap');
 *{
-    box-sizing:border-box;
     text-transform: capitalize;
     transition: all 0.2s linear;
     margin: 0;
@@ -86,12 +85,13 @@ section{
     display:none;
 }
 .home{
-    display: flex;
+    display:flex;
     justify-content: center;
     align-items: center;
+    gap: 2rem;
 }
 .home-content h3{
-    font-size: 3.2rem;
+    font-size: 3.0rem;
     font-weight: 700;
     animation:floating 0.8s;
     animation-direction:alternate;
@@ -105,7 +105,7 @@ section{
 }
 
 .home-content h1{
-    font-size: 5.6rem;
+    font-size: 5.3rem;
     font-weight: 700;
     line-height: 1.3;
     animation:floating 0.8s;
@@ -113,12 +113,11 @@ section{
     animation-iteration-count: infinite;
 }
 .home-image img{
-    width: 43vw;
-    margin-right: -10rem;
+    margin-left: 4rem;
+    width: 40vw;
     animation:floating 0.8s;
-    animation-direction:alternate-reverse;
+    animation-direction:alternate;
     animation-iteration-count: infinite;
-    cursor: pointer;
 }
 .home-image:hover img{
     transform: scale(1.1);
@@ -209,12 +208,12 @@ span{
     margin-left:3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(110px,auto));
-    gap:2rem;
+    gap:3rem;
  }
 .row li{
     
      background: #333;
-     border-radius: 2rem;
+     border-radius: 2.5rem;
      display: flex;
      justify-content: center;
      align-items: center;
@@ -228,7 +227,7 @@ span{
  }
  
 .row li:hover{
-     border-radius: 1.2rem;
+     border-radius: 2rem;
      transition: none;
      background: #fff;
      
@@ -456,59 +455,21 @@ span{
         margin: 3rem 0;
         color: var(--text-color);
     }
-    .home{
-        padding: 0 3% 23rem;
-        justify-content: center;
-        text-align: center;
-        margin-left: 22rem;
-    }
-    .home-content h3{
-        font-size: 2.6rem;
-    }
-    .home-content h1{
-        font-size: 5rem;
-        margin-top: 1rem;
-    }
     .home-image img{
-        width:70vw;
-        margin-top: 4rem;
+        margin-top: 7rem;
     }
-    .projects h3 h5{
-        font-size: 1.4rem;
-        margin-bottom: 5rem;
-    } 
-    .layer h3{
+    .icon a{
         font-size: 2rem;
+        width: 5rem;
+        height: 5rem;
+        border-radius: 47%;
+    }
+    .layer h3{
+        font-size: 1.5rem;
     }
     .layer h5{
-        font-size: 1.3rem;
+        font-size: 1rem;
+        margin: .3rem 0 1rem;
     }
-    .layer a{
-        width: 3rem;
-        height: 3rem;
-    }
-    .skills .skill-box .row {
-        margin-top: 3rem;
-        margin-left:3rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(110px,auto));
-        gap:1rem;
-     }
-     .skills .skill-box .row li{
-        
-         background: #333;
-         border-radius: 1rem;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-     }
-     .skills .skill-box .row li img{
-         height:100px;
-         padding:1rem;
-         align-content: center;
-         object-fit: cover;
-     }
-    
-   
 }
+    
