@@ -36,6 +36,9 @@ section{
     
     padding: 80px 8%;
 }
+.page-container{
+    border:1px solid white;
+}
 
 .header{
     position:fixed;
