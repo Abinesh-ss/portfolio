@@ -323,7 +323,7 @@ span{
     margin-left:3rem;
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(110px,auto));
-    gap:2rem;
+    gap:1rem;
  }
  .skills .skill-box .row li{
     
@@ -549,6 +549,9 @@ span{
     }
     .layer a i{
         font-size: 1rem;
+    }
+    .project-content{
+        grid-gap:2rem;
     }
 }
     
