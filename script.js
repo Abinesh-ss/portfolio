@@ -43,6 +43,6 @@ ScrollReveal({
  ScrollReveal().reveal('.heading ,.heading-1',{origin: 'top'});
  ScrollReveal().reveal('.home-image, .about-img,.icon,.span', {origin: 'bottom'});
  ScrollReveal().reveal('.homr-content h1, .about-content h3,.domain, .h1, .name', {origin: 'left'});
- ScrollReveal().reveal('.home-content p, .about-content p, .profile, .project-content, .skill-box', {origin: 'right'});
+ ScrollReveal().reveal('.home-content p, .about-content p, .profile, .project-content, .skill-box', {origin: 'left'});
  
  
