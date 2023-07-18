@@ -50,9 +50,11 @@ section{
     align-items: center;
     z-index: 100;
     color: #fff;
+    transition: .5s;
 }
 .header.sticky{
     border-bottom: 1rem solid rgba(0,0,0,0.2);
+    box-shadow: 0 .1rem 1rem var(--bg-color);
 }
 .logo{
     font-size: 2.5rem;
@@ -429,97 +431,9 @@ span{
         padding:2rem 3%;
     }
 }
-@media (max-width:480px){
-    html{
-     font-size:50%;
-    }
-    body{
-        overflow-x: hidden;
-    }
-    .header{
-        padding: 1.5rem 9%;
-    }
-    #menu-icon{
-        display: block;
-        font-size: 3.6rem;
-        color: var(--text-color);
-        cursor: pointer;
-    }
-    .navbar{
-        position:absolute;
-        top: 100%;
-        left: 0;
-        width: 100%;
-        padding: 1rem 3%;
-        background: var(--bg-color);
-        border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
-        display: none;
-        z-index: 100;
-    }
-    .navbar.active{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    .navbar a{
-        display: block;
-        font-size: 2rem;
-        margin: 1rem 0;
-    }
-    .home-image img{
-        width:70vw;
-        margin-top: 4rem;
-    }
-    .projects h3 h5{
-        font-size: 1.4rem;
-        margin-bottom: 2rem;
-    } 
-    .layer h3{
-        font-size: 1rem;
-    }
-    .layer h5{
-        font-size: .8rem;
-    }
-    .layer a{
-        width: 1rem;
-        height: 1rem;
-    }
-    .skills .skill-box .row {
-        margin-top: 3rem;
-        margin-left:3rem;
-        display: grid;
-        grid-template-columns: repeat(auto-fit,minmax(110px,auto));
-        gap:1rem;
-     }
-     .skills .skill-box .row li{
-        
-         background: #333;
-         border-radius: 1rem;
-         display: flex;
-         justify-content: center;
-         align-items: center;
-         box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
-     }
-     .skills .skill-box .row li img{
-         height:100px;
-         padding:1rem;
-         align-content: center;
-         object-fit: cover;
-     }
-  }
 @media (max-width:768px){
-    body{
-        overflow-x: hidden;
-    }
-    .header{
-        padding: 1.5rem 9%;
-    }
     #menu-icon{
         display: block;
-        font-size: 3.6rem;
-        color: var(--text-color);
-        cursor: pointer;
     }
     .navbar{
         position:absolute;
@@ -534,14 +448,26 @@ span{
         z-index: 100;
     }
     .navbar.active{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
+        display: block;
     }
     .navbar a{
         display: block;
         font-size: 2rem;
-        margin: 1rem 0;
+        margin: 3rem 0;
+        color: var(--text-color);
+    }
+    .home{
+        padding: 0 3% 23rem;
+        justify-content: center;
+        text-align: center;
+        margin-left: 22rem;
+    }
+    .home-content h3{
+        font-size: 2.6rem;
+    }
+    .home-content h1{
+        font-size: 5rem;
+        margin-top: 1rem;
     }
     .home-image img{
         width:70vw;
@@ -549,7 +475,7 @@ span{
     }
     .projects h3 h5{
         font-size: 1.4rem;
-        margin-bottom: 2rem;
+        margin-bottom: 5rem;
     } 
     .layer h3{
         font-size: 2rem;
