@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
+ @import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@500&display=swap');
 *{
     text-transform: capitalize;
     transition: all 0.2s linear;
@@ -522,19 +522,19 @@ span{
         font-size: 3.3rem;
 
     }
-    .icon a i{
-        font-size: 3rem;
-        width: 5rem;
-        height: 5rem;
+    .icon a{
+        font-size: 3.6rem;
+        width: 8rem;
+        height: 8rem;
         border-radius: 47%;
-        padding: 3px;
-        margin: 18px;
+        margin: 15px;
     }
     .layer h3{
-        font-size: 1rem;
+        font-size: 4.3rem;
     }
     .layer h5{
-        font-size: .5rem;
+        font-style: italic;
+        font-size: 2rem;
         margin: .3rem 0 1rem;
     }
     .layer a{
@@ -542,16 +542,25 @@ span{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 2rem;
-        height: 2rem;
+        width: 10rem;
+        height: 10rem;
         background: var(--text-color);
-        border-radius: 50%;
+        border-radius: 47%;
+        background: transparent; 
     }
     .layer a i{
-        font-size: 1rem;
+        font-size: 7rem;
     }
+   .skills .skill-box .row{
+       margin-left: 0rem;
+   }
     .project-content{
-        grid-gap:2rem;
+        display:grid; 
+        grid-template-columns: repeat (1, 50fr);
+        grid-gap:3rem;
+        align-items: center; 
+        cursor:pointer;
+        padding: 20px;
     }
     
 }
