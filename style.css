@@ -530,11 +530,11 @@ span{
         margin: 15px;
     }
     .layer h3{
-        font-size: 4.3rem;
+        font-size: 3rem;
     }
     .layer h5{
         font-style: italic;
-        font-size: 2rem;
+        font-size: 1.8rem;
         margin: .3rem 0 1rem;
     }
     .layer a{
@@ -542,21 +542,21 @@ span{
         display: inline-flex;
         justify-content: center;
         align-items: center;
-        width: 10rem;
-        height: 10rem;
+        width: 8rem;
+        height: 8rem;
         background: var(--text-color);
         border-radius: 47%;
         background: transparent; 
     }
     .layer a i{
-        font-size: 7rem;
+        font-size: 6rem;
     }
    .skills .skill-box .row{
        margin-left: 0rem;
    }
     .project-content{
         display:grid; 
-        grid-template-columns: repeat(1,4fr);
+        grid-template-columns: repeat(1, 4fr);
         grid-gap:3rem;
         align-items: center; 
         cursor:pointer;
