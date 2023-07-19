@@ -523,12 +523,12 @@ span{
 
     }
     
-    .icon a i{
+    .icon a{
         font-size: 3rem;
         width: 5rem;
         height: 5rem;
         border-radius: 47%;
-        padding: 2rem;
+    
     
     }
     .layer h3{
