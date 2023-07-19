@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css?family=Josefin Sans');
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap"
+);
 *{
     text-transform: capitalize;
     transition: all 0.2s linear;
@@ -28,7 +29,7 @@ html{
     overflow-x: hidden;
 }
 body{
-    font-family: 'JosefinSans';
+    font-family: 'Josefin Sans',sans-serif;
     background: var(--bg-color);
     color:var(--text-color)
 }
@@ -475,6 +476,7 @@ span{
         width: 8rem;
         height: 8rem;
         border-radius: 47%;
+        padding:5rem;
     }
     .layer h3{
         font-size: .7rem;
