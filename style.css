@@ -16,7 +16,6 @@
     --second-bg-color:#323946;
     --text-color:#fff;
     --main-color:#0ef;
-
 }
 @keyframes floating{
     0%{ transform: translate(0,0px);}
