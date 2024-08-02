@@ -113,10 +113,12 @@ section{
 .home-image img{
     margin-left: 4rem;
     width: 30vw;
-    transform: scaleY(-1);
     animation:floating 0.8s;
     animation-direction:alternate;
     animation-iteration-count: infinite;
+}
+.home-image{
+    transform: scaleX(-1);
 }
 .home-image:hover img{
     transform: scale(1.1);
