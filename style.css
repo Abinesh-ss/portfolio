@@ -112,7 +112,7 @@ section{
 }
 .home-image img{
     margin-left: 4rem;
-    width: 45vw;
+    width: 30vw;
     animation:floating 0.8s;
     animation-direction:alternate;
     animation-iteration-count: infinite;
@@ -158,7 +158,8 @@ span{
     background: var(--second-bg-color);
 }
 .about-img img{
-    width: 30vw;
+    width: 45vw;
+    transform: scaleY(-1);
     animation:floating 0.8s;
     animation-direction:alternate;
     animation-iteration-count: infinite;
